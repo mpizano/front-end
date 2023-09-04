@@ -36,6 +36,36 @@ searchForm.addEventListener("submit", async (event) => {
  * Función para obtener los datos mediante fetch.
  * @returns {Promise<Array>} - Datos obtenidos en formato de array.
  */
+/**
+ * Función para obtener datos directamente desde un archivo JSON en GitHub.
+ * @returns {Promise<Array>} - Datos obtenidos en formato de array.
+ */
+async function fetchData() {
+  try {
+    // Paso 1: Realizar una solicitud al archivo JSON en GitHub (reemplaza con tu URL)
+    const response = await fetch('https://raw.githubusercontent.com/mpizano/front-end/main/2.Integradora/data.json');
+
+    // Paso 2: Verificar si la respuesta es exitosa
+    if (!response.ok) {
+      throw new Error(`Solicitud fallida con estado: ${response.status}`);
+    }
+
+    // Paso 3: Convertir la respuesta a formato JSON
+    const data = await response.json();
+
+    // Paso 4: Almacenar los datos obtenidos en la variable allData
+    allData = data;
+
+    // Paso 5: Devolver los datos obtenidos
+    return data;
+  } catch (error) {
+    // En caso de error, mostrar un mensaje de error en la consola y devolver un array vacío
+    console.error("Error al obtener los datos:", error);
+    return [];
+  }
+}
+
+/*
 async function fetchData() {
   try {
     // const response = await fetch(`URL_DEL_SERVIDOR?search=${searchTerm}`);
@@ -48,6 +78,8 @@ async function fetchData() {
     return []; // En caso de error, devolver un array vacío
   }
 }
+
+*/
 
 // Llamar a fetchData al cargar la página
 fetchData();
