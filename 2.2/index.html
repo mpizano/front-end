@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2. Objetos y JSON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <h1>2.2. Objetos y JSON</h1>  
+      <h2>Formulario de Creación</h2>
+        <form id="formularioCreacion">
+            <!-- Campos de entrada para la entidad -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultadoCreacion"></div>
+
+        <h1>Formulario de JSON</h1>
+        <form id="formularioJSON">
+            <label for="cadenaJSON">Cadena JSON:</label>
+            <textarea id="cadenaJSON" required></textarea>
+            <button type="submit">Convertir</button>
+        </form>
+        <table id="tablaJSON"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

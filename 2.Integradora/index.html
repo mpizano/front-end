@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Integradora 2. AJAX y Fetch API</title>
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Integradora 2. AJAX y Fetch API</h1>
+    <h2>Tabla de Datos</h2>
+    <form id="search-form" class="mt-3">
+      <div class="input-group">
+        <input type="text" id="search-input" class="form-control" placeholder="Buscar...">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+      </div>
+    </form>
+  </header>
+  <main class="container my-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>País</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Aquí se agregarán los datos -->
+      </tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

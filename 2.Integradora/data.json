@@ -1,0 +1,52 @@
+[
+    {
+        "nombre": "Juan Pérez",
+        "edad": 30,
+        "pais": "México"
+    },
+    {
+        "nombre": "Ana García",
+        "edad": 25,
+        "pais": "España"
+    },
+    {
+        "nombre": "Luis Martinez",
+        "edad": 28,
+        "pais": "Argentina"
+    },
+    {
+        "nombre": "María Lopez",
+        "edad": 22,
+        "pais": "Colombia"
+    },
+    {
+        "nombre": "Carlos Smith",
+        "edad": 35,
+        "pais": "Estados Unidos"
+    },
+    {
+        "nombre": "Alejandro Rodríguez",
+        "edad": 29,
+        "pais": "México"
+    },
+    {
+        "nombre": "Sophia Kim",
+        "edad": 24,
+        "pais": "Corea del Sur"
+    },
+    {
+        "nombre": "Emma Müller",
+        "edad": 27,
+        "pais": "Alemania"
+    },
+    {
+        "nombre": "Rafael Gómez",
+        "edad": 32,
+        "pais": "España"
+    },
+    {
+        "nombre": "Isabella Rossi",
+        "edad": 28,
+        "pais": "Italia"
+    }
+]
